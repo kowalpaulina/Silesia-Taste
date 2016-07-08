@@ -1,0 +1,613 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* stylizowanie pod html shiv */
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+
+body {
+	color: #555;
+	font-size: 18px;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+#main-nav, #button, #navbar  {
+    border: none;
+    background-color: #006653;
+    border-bottom: 0.5px solid #5EFFCF;
+}
+
+#button {
+    color: #5EFFCF;
+    font-size: 115%;
+    padding: 0 6px 2px 6px;
+    margin-left: 4px;
+    border-bottom: 1px solid #5EFFCF;
+}
+
+#navbar{
+    border-radius: 5px;
+    color: #555;
+    background-color: #006653;  
+    max-width: 100%;
+    border-bottom: 1px solid #5EFFCF;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
+
+[data-title] {
+    position: relative;
+}
+
+[data-title]:hover::before, [data-title]:focus::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    background: #444;
+    color: #F0F8FF;
+    padding: 5px;
+    font-size: 70%;
+    border-radius: 5px;
+    
+}
+
+.navbar-inverse .navbar-toggle[aria-expanded:"true"] {
+    background-color: #5EFFCF;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #006653;
+}
+
+.navbar-inverse .navbar-toggle[aria-expanded] {
+    background-color: #006653;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #006653;
+    overflow-x: hidden;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: rgba(0,102,83,0.9);
+}
+
+
+#dropdown-menu > li > a {
+    color: #5EFFCF;
+}
+
+
+
+#brand {
+    color: #5EFFCF;
+}
+
+.main-header {
+	position: absolute;
+    top: 50%; 
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	font-family: 'Lato', 'Verdana', sans-serif;
+    width: 60%;
+}
+
+#main-title {
+    font-size: 250%;
+    line-height: 110%;
+    margin: 5px 0;
+}
+
+
+.jumbotron {
+    background-color: rgb(0,161,131);
+	background-image: url(../image/min/food-salad-healthy-lunch-pexels-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/min/food-salad-healthy-lunch-pexels-min.jpg);
+	background-position: center center;
+	background-size: cover;
+    height: 70vh;
+}
+
+.row {
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+figure {
+    max-width: 100%;
+    position: relative;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+figcaption, .photo-figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0 20px 20px;
+    color: #F5F5DC;
+    cursor: pointer;
+    -webkit-transition: padding 0.5s;
+    -ms-transition: padding 0.5s;
+    transition: padding 0.5s;
+    
+}
+
+.figcaption-description {
+    display: none;
+    padding: 5px 15px 0px 0px;
+}
+
+.photo-figcaption .icon-more {
+    font-size: 200%;
+}
+
+.article-icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -ms-display: flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+.article-icons div {
+    font-size: 210%;
+    display: inline-block;
+    color: #006653;
+}
+
+.icon-small {
+    display: inline-block;
+}
+
+.icon-description {
+    font-size: 80%;
+    display: inline-block;
+    padding-left: 10px;
+    text-transform: uppercase;
+    color: #006653;
+}
+
+.place-information {
+    margin: 20px 0 0 0;
+}
+
+
+h2 {
+	font-size: 150%;
+	word-spacing:4px;
+    padding-left: 10px;
+}
+
+h3 {
+	font-size: 120%;
+    margin-bottom: 10px;
+	
+}
+
+.place-name{
+    max-width: 100%;
+}
+
+h4 {
+	font-size: 110%;
+	padding: 0 0 10px 10px;
+}
+
+p {
+	text-align: justify;
+	line-height: 1.5;
+    font-size: 90%;
+}
+
+.last-reviev, .four-seasons, .map {
+    padding: 0;
+}
+
+
+/* MAP */
+
+.mapa {
+    height: 400px;
+}
+
+.best-places{
+    padding-right: 0;
+}
+
+.oryginal-place {
+    height: 50px;
+    margin: 15px 0;
+    color: #555;
+    background-color: rgb(232,232,232);
+    -ms-display: flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+.icon-map {
+    display: inline-block;
+    font-size: 180%;
+    float: right;
+    margin: 0px 5px;
+    color: #555;
+    -webkit-transition: color 0.1s;
+    transition: color 0.1s; 
+}
+
+.oryginal-place:hover .icon-map {
+    color: #F0F8FF;
+}
+
+.oryginal-place-kafej {
+    border-left: 5px solid rgba(0,102,255,0.8);
+    margin-top: 0px;
+    -webkit-transition: background-color 0.3s, color 0.1s;
+    transition: background-color 0.3s, color 0.1s;
+}
+
+.oryginal-place-kafej:hover {
+    background-color: rgba(0,102,255,0.8);
+    color: #F0F8FF;
+}
+
+.oryginal-place-strefa {
+    border-left: 5px solid rgba(0,100,0,0.8);
+    -webkit-transition: background-color 0.2s, color 0.1s;
+    transition: background-color 0.2s, color 0.1s;
+}
+
+.oryginal-place-strefa:hover {
+    background-color: rgba(0,100,0,0.8);
+    color: #F0F8FF;
+}
+
+.oryginal-place-zloty {
+    border-left: 5px solid rgba(229,172,182,0.8);	
+    -webkit-transition: background-color 0.2s, color 0.1s;
+    transition: background-color 0.2s, color 0.1s;
+}
+
+.oryginal-place-zloty:hover {
+    background-color: rgba(229,172,182,0.8);
+    color: #F0F8FF;
+}
+
+.oryginal-place-prazalnia {
+    border-left:  5px solid rgba(255,25,25,0.8);	
+    transition: background-color 0.2s, color 0.1s;
+    -webkit-transition: background-color 0.2s, color 0.1s;
+}
+
+.oryginal-place-prazalnia:hover {
+    background-color: rgba(255,25,25,0.8);
+    color: #F0F8FF;
+}
+
+.oryginal-place-stoliki {
+    border-left: 5px solid rgba(255,165,0,0.8);	
+    -webkit-transition: background-color 0.2s, color 0.1s;
+    transition: background-color 0.2s, color 0.1s;
+}
+
+.oryginal-place-stoliki:hover {
+    background-color: rgba(255,165,0,0.8);	
+    color: #F0F8FF;
+}
+
+.oryginal-place-kofeina {
+    border-left: 5px solid rgba(128,0,128,0.8);	
+    -webkit-transition: background-color 0.2s, color 0.1s;
+    transition: background-color 0.2s, color 0.1s;
+}
+
+.oryginal-place-kofeina:hover {
+    background-color: rgba(128,0,128,0.8);
+    color: #F0F8FF;
+}
+
+#category {
+    float: right;
+    margin: 9px 1px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    background-color: rgb(51,153,204);
+    height: 30px;
+    border: 0;
+    border-radius: 10%;
+}
+
+.name-place {
+    text-align: left;
+    font-size: 100%; 
+    font-weight: 400;
+}
+
+.map-title, .seasons-title, .header-main-article {
+    width: 70%;
+    background-color: rgba(102,0,70,0.8);
+    display: inline-block;
+    padding: 10px 0px;
+    word-spacing: 4px; 
+    color: #FFFAF0;
+}
+
+.main-review-block, .four-seasons-photos, .best-places-section {
+	margin-bottom: 50px;
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+/* FOUR SEASONS PHOTO */
+
+
+.seasons-photo {
+    position: relative; 
+    margin: 0;
+    padding: 0;
+}
+
+.four-seasons-photos {
+  padding: 0 15px;
+}
+
+
+.lunch figcaption, .breakfast figcaption, .cake figcaption, .supper figcaption  {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 60px;
+    width: 80%;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 120%;
+    padding: 0 0 0 20px;
+    -ms-display: flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.breakfast-type, .lunch-type, .dessert-type, .supper-type {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 2em;
+    width: 30%;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 100%;
+    left: 80%;
+    -webkit-transform: translate(-100%, -50%);
+	-ms-transform: translate(-100%, -50%);
+	transform: translate(-100%, -50%);
+    color: #F0F8FF;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.visible {
+    opacity: 1;
+}
+
+
+.four-seasons-figcaption {
+    position: relative;
+    z-index: 100;
+}
+
+.icon-more {
+    font-size: 150%;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.nonvisible {
+    opacity: 0;
+}
+
+
+
+.breakfast-type p, .dessert-type p, .lunch-type p, .supper-type p {
+    padding: 6px 0 5px 5px;
+}
+
+
+.en, .vege, .cake, .fitness {
+    top: 36%;
+}
+
+.usa, .classic, .ice-cream, .vegetarian-supper {
+    top: 47%;
+}
+
+.japan, .fit, .silesian {
+    top: 58%;
+}
+
+.europe, .vegetarian {
+    top: 69%;
+}
+
+
+/* FOOTER */ 
+
+.footer-social {
+    margin: 40px auto;
+}
+
+.ion-social {
+    font-size: 200%;
+    color: #5EFFCF;
+}
+
+.top {
+    font-size: 110%;
+    font-weight: 400;
+    color: #5EFFCF;
+}
+
+.icon-anim {
+    -ms-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    animation-duration: 3s;
+    }
+
+.icon-anim a {
+    text-decoration: none;
+}
+
+footer {
+    height: 300px;
+    border-top: 1px solid #5EFFCF;
+    background-color: #006653;      
+}
+
+.footer-end {
+    color: #5EFFCF;
+    font-size: 110%;
+    letter-spacing: 90%;
+}
+
+.kontakt, .copyright {
+    text-align: left;
+}
+
+.kontakt, .copyright, .copyright-icons, .copyright-photos {
+    margin-left: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+.copyright-icons, .copyright-photos {
+    font-size: 70%;
+    margin-top: 20px;
+    text-align: left;
+    
+   
+}
+
+.copyright-photos {
+        margin-top: 5px;
+    }
+
+.copyright-icons a, .copyright-photos a {
+    text-decoration: none;
+    color: #5EFFCF;
+}
+        
+
+
+/* MARKERS ON MAP*/
+
+.marker-place {
+    width: 140px;
+}
+
+.marker-title {
+    font-size: 120%;
+     display: inline;
+    
+}
+
+
+.marker-img {
+    width: 140px;
+    margin: 5px 0 5px;
+}
+
+.marker-img img {
+    max-width: 100%;
+}
+
+
+ 
