@@ -1,304 +1,601 @@
-/* 1024-1200 px */
+
 
 @media only screen and (max-width: 1200px) {
-	.name {
-		width: 100%;
-		padding-left: 3%;
-	}
-	
-	.row {
-		padding: 0 3%;
-	}}
-
-
-/* small tablets to big tablets 768px to 1023px*/
-
-@media only screen and (max-width: 1023px){
-	body, textarea, input {
-		font-size: 18px;
-	}
-	
-	.column-1, .column-2, .column-3 {
-		font-size: 17px;
-	}
-	
-	input[type=submit] {
-	width: 25%;
-	}
-	
-	.aboutme, .work, .galeria, .free-time, .contact {
-		padding-top: 40px;
-	}
-	
-	.aboutme, .work, .free-time {
-		padding-bottom: 40px;
-	}
-	
-	.work-title, .galeria-zdjec, .free-time-title, .contact-title, .live-title, .job-title, .hobby-title {
-		margin-bottom: 20px;
-	}
-	
-	.form {
-		width: 55%;
-	}
+     .en, .vege, .cake, .fitness {
+        top: 37%;
+        }
     
-	
-	.gallery li {
-		width: 25%;
-	}
-	
-	
-	
-	.gallery-photo img {
-		height: 180px;
-	}	
+     .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 49%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 61%;
+    }
+
+    .europe, .vegetarian {
+        top: 73%;
+    }
+    
+    .breakfast-type p, .dessert-type p, .lunch-type p, .supper-type p {
+        padding: 5px 0 0 6px;
+}
+    
+    .article-icons div {
+        font-size: 190%;}
+    
+    .icon-description {
+        font-size: 90%;}
 }
 
 
-/* small phones to small tablets 481px to 767px*/
 
-@media only screen and (max-width: 767px){
-	body, textarea, input {
-		font-size: 16px;
-	}
-	
-	.aboutme, .work, .free-time, .contact {
-		padding-left: 15px;
-		padding-right: 15px;	
-	}
-	
-	.name {
-		top: 70%;
-	
-	}
-	
-	.ewa-photo {
-		height: 140px;
-		width: 140px;
-	}
-	
-	.column-1, .column-2, .column-3 {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	
-	.experience-headline, .education-headline {
-		max-width: 100%;
-		margin: 10px auto;
-	}
-	
-	.education, .experience {
-		width: 100%;
-	}
-	
-	.education {
-		margin-bottom: 10px;
-	}
+@media only screen and (max-width: 1200px) {
+.oryginal-place {
+    height: 52px;
+    margin: 10px 0;
+    }
     
-    .education-description, .experience-description {
+#category {
+    float: right;
+    margin: 1px 1px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    background-color: rgb(51,153,204);
+    height: 10px;
+    border: 0;
+    border-radius: 10%;
+    }
+    
+.name-place {
+        text-align: left;
+        font-size: 100%;   
+        }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #main-title, #second-main-title {
+        font-size: 200%;
+        line-height: 110%;
+        margin: 5px 0;
+}   
+    .main-header {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+   .place-name{
+    max-width: 100%;
+    padding: 12px 0;
+}
+    
+    .best-places{
+    padding-left: 0;
+}
+    
+       .en, .vege, .cake, .fitness {
+        top: 34.5%;
+        }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 42.5%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 50.5%;
+    }
+
+    .europe, .vegetarian {
+        top: 58.5%;
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+   .lunch figcaption, .breakfast figcaption, .cake figcaption, .supper figcaption  {
+        height: 50px;
+        width: 80%;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-size: 110%;
+        padding-left: 7px;
+        }
+    
+    .breakfast-type, .lunch-type, .dessert-type, .supper-type {
+        height: 2em;
+        
+        }
+    
+    .breakfast-type p, .dessert-type p, .lunch-type p, .supper-type p {
+        padding: 5px 0 0 6px;
+}
+    
+    .article-icons div {
+        font-size: 210%;}
+    
+    .icon-description {
+        font-size: 90%;}
+    
+    .article-icons {
+        margin-bottom: 15px;
+        }
+    
+    .oryginal-place {
+        height: 40px;
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (max-width: 920px) {
+    .main-header {
+        width: 80%;
+    }}
+
+
+@media only screen and (max-width: 730px) {
+     .en, .vege, .cake, .fitness {
+        top: 34.5%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 42.5%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 50.7%;
+    }
+
+    .europe, .vegetarian {
+        top: 58.8%;
+    }
+    
+    .mapa {
+        height: 250px;
+}
+}
+
+
+@media only screen and (max-width: 694px) {
+     .en, .vege, .cake, .fitness {
+        top: 35%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 44%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 53%;
+    }
+
+    .europe, .vegetarian {
+        top: 62%;
+    }
+}
+
+
+@media only screen and (max-width: 635px) {
+     .en, .vege, .cake, .fitness {
+        top: 36%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 46%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 56%;
+    }
+
+    .europe, .vegetarian {
+        top: 66%;
+    }
+}
+
+
+
+@media only screen and (max-width: 590px){
+     #main-title, #second-main-title {
+        font-size: 140%;
+         font-weight: 400;
+        margin: 10px 0;
+    }
+    
+    .title {
+	   height: 300px;
+        }
+    
+    footer {
+        height: 330px;
+    }
+    
+   .photo-figcaption {
+        padding: 10px 0 10px 20px;
+        }
+    
+   .lunch figcaption, .breakfast figcaption, .cake figcaption, .supper figcaption  {
+        height: 50px;
+        width: 80%;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-size: 110%;
+        padding-left: 7px;
+        }
+    
+    
+    .breakfast-type, .lunch-type, .dessert-type, .supper-type {
+        height: 2em;
+        width: 35%;
+        }
+
+    .en, .vege, .cake, .fitness {
+        top: 36%;
+        }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 46%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 56%;
+    }
+
+    .europe, .vegetarian {
+        top: 66%;
+    }
+    
+    .breakfast-type p, .dessert-type p, .lunch-type p, .supper-type p {
+        padding: 5px 0 0 6px;
+}
+}
+
+
+
+@media only screen and (max-width: 575px) {
+     .en, .vege, .cake, .fitness {
+        top: 37%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 48%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 59%;
+    }
+
+    .europe, .vegetarian {
+        top: 70%;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+     .en, .vege, .cake, .fitness {
+        top: 38%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 50%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 62%;
+    }
+
+    .europe, .vegetarian {
+        top: 74%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+     .en, .vege, .cake, .fitness {
+        top: 37%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 49%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 61%;
+    }
+
+    .europe, .vegetarian {
+        top: 73%;
+    }
+}
+
+
+
+@media only screen and (max-width: 468px) {
+     .en, .vege, .cake, .fitness {
+        top: 39%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 53%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 67%;
+    }
+
+    .europe, .vegetarian {
+        top: 81%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+     .en, .vege, .cake, .fitness {
+        top: 38%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 52%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 66%;
+    }
+
+    .europe, .vegetarian {
+        top: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 411px) {
+     .en, .vege, .cake, .fitness {
+        top: 39%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 55%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 71%;
+    }
+
+    .europe, .vegetarian {
+        top: 88%;
+    }
+    
+        
+    .oryginal-place {
+        height: 40px;
+}
+    
+    .oryginal-place-kafej {
+        margin-top: 0px;
+    }
+    
+    .mapa {
+	margin-bottom: 15px;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+     .en, .vege, .cake, .fitness {
+        top: 41%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 58%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 75%;
+    }
+
+    .europe, .vegetarian {
+        top: 92%;
+    }
+    
+    h2 {
+        font-size: 110%;}
+    
+    .map-title, .seasons-title, .header-main-article {
+    width: 90%;
+}
+
+
+
+@media only screen and (max-width: 370px) {
+     .en, .vege, .cake, .fitness {
+        top: 41%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 58%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 75%;
+    }
+
+    .europe, .vegetarian {
+        top: 92%;
+    }
+    
+    .name-best-place, .icons {
+        width: 100%;
+        display: inline-block;
+        font-size: 90%;
+    }
+    
+    .icons {
+        float: right;
+        font-size: 80%;
+    }
+    
+    .marker-img {
+        width: 110px;
+    }
+    
+    .main-review-block, .four-seasons-photos, .best-places-section {
+        margin-bottom: 30px;}
+    
+    h3 {
+        line-height: 1.3;
+    }
+    
+      footer {
+        height: 365px;
+    }
+    }
+
+
+@media only screen and (max-width: 350px) {
+     .en, .vege, .cake, .fitness {
+        top: 39%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 53%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 67%;
+    }
+
+    .europe, .vegetarian {
+        top: 81%;
+    }
+    
+   
+    
+     .breakfast-type, .lunch-type, .dessert-type, .supper-type {
+        height: 1.5em;
+        width: 45%;
+        }
+    
+      .breakfast-type p, .dessert-type p, .lunch-type p, .supper-type p {
+          padding: 2px 0 3px 5px;
+            }
+    
+/* MARKERS ON MAP*/
+
+
+    .marker-title {
+        font-size: 100%;
+}
+    
+    .marker-img {
+          display: none;
+
+        
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .breakfast-type, .lunch-type, .dessert-type, .supper-type {
+        height: 1.5em;
+        width: 45%;
+        }
+    
+      .breakfast-type p, .dessert-type p, .lunch-type p, .supper-type p {
+          padding: 2px 0 3px 5px;
+            }
+    
+     .en, .vege, .cake, .fitness {
+        top: 40%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 58%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 75%;
+    }
+
+    .europe, .vegetarian {
+        top: 92%;
+    }
+    
+    figcaption {
+        padding: 10px 0 10px 10px;
+    }
+    
+    footer {
+        height: 385px;
+    }
+    
+    
+    .figcaption-description {
+        font-size: 80%;
+}
+    
+   .photo-figcaption {
+        padding: 10px 0 10px 10px;
+        }
+    
+    
+    
+
+}
+
+
+@media only screen and (max-width: 288px) {
+    .breakfast-type, .lunch-type, .dessert-type, .supper-type {
+        height: 1.4em;
+        width: 45%;
+        }
+    
+      .breakfast-type p, .dessert-type p, .lunch-type p, .supper-type p {
+          padding: 1px 0 4px 5px;
+            }
+    
+     .en, .vege, .cake, .fitness {
+        top: 40%; }
+
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 57%;
+    }
+
+    .japan, .fit, .silesian {
+        top: 74%;
+    }
+
+    .europe, .vegetarian {
+        top: 91%;
+    }
+    
+    footer {
+        height: 425px;
+    }
+    
+    }
+    
+
+
+@media only screen and (max-width: 280px){
+    #main-title, #second-main-title {
+        font-size: 130%;
+        margin: 15px 0;
+        }
+    
+    .main-header {
         width: 100%;
     }
-	
-	.gallery-photo img {
-		height: 150px;
-	}
-	
-	
-	
-	.gallery li:last-child {
-		display: none;
-	}
-	
-	.gallery li {
-		width: 33.33%;
-	}
-	
-	.kontakt-form-map {
-		height: auto;
-		
-	}
-	
-	.form {
-		position: relative;
-		width: 100%;
-		margin-top: 20px;
-		height: 510px;
-	}
     
-    form {
-        height: 300px;
-    }
-	
-	.map {
-		height: 200px;
-		width: 100%;
-	}
-	
-	.footer-links, .footer-social {
-		width: 100%;
-		font-size: 130%;
-	}
-	
-	.footer-social li {
-		float: left;	
-	}
-    
-	.email_contact {
-		margin-top: 15px;
-		font-size: 20px;
-	}
-	
-	.copyright {
-	margin-top: 20px;
-	}		
+    .lunch figcaption, .breakfast figcaption, .cake figcaption, .supper figcaption  {
+        height: 40px;
+        width: 80%;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-size: 110%;
+        padding-left: 10px;
+        }
+
+    .en, .vege, .cake, .fitness {
+        top: 40%;
 }
 
+    .usa, .classic, .ice-cream, .vegetarian-supper {
+        top: 57%;
+    }
 
+    .japan, .fit, .silesian {
+        top: 74%;
+    }
 
-/* PONIŻEJ 481PX */
-
-@media only screen and (max-width: 480px){
-	.ewa-photo {
-		height: 120px;
-		width: 120px;
-	}
-	
-	.name {
-		max-width: 100%;
-	}
-	
-	.photoewa {
-		margin-left: 31%;
-	}
-	
-	.ewa-title {
-		margin: 0px 25%;
-		max-width: 100%;
-		float: none;
-		padding-left: 0;
-	}
-	
-	h1 {
-		font-size: 180%;
-	}
-	
-	footer {
-		max-height: 290px;
-	}
-	
-	.email_contact {
-	margin-top: 25px;
-	}
-	
-	.footer-nav li{
-		margin-top: 20px;
-	}
+    .europe, .vegetarian {
+        top: 91%;
+    }
     
-    .footer-nav, .social-links {
-	   padding-top: 10px;
+    .oryginal-place {
+        height: 60px;
     }
 }
-	
-
-
-/* PONIŻEJ 380PX */
-
-@media only screen and (max-width: 380px){
-	.name {
-		max-width: 100%;
-		
-	}
-	
-	.photoewa {
-		margin-left: 26%;
-	}
-	
-	.ewa-title {
-		margin: 0px 25%;
-		max-width: 100%;
-		float: none;
-	}
-	
-	h1 {
-		max-width: 100%;
-		margin-left: 0px;
-		font-size: 110%;
-	}
-	
-	
-	.gallery li {
-		width: 50%;
-	}
-	
-	.gallery li:first-child  {
-		display: none;
-	}
-	
-	.gallery-photo img {
-		height: 120px;
-	}
-	
-	.copyright {
-		font-size: 15px;
-	}
-	
-	.aboutme, .work, .galeria, .free-time, .contact {
-		padding-top: 20px;
-	}
-	
-	body, textarea, input {
-		font-size: 15px;
-	}
-	
-	.column-1, .column-2, .column-3 {
-		font-size: 15px;
-	}
-}
-
-
-
-/* max 560px dla menu hamburger*/
-@media only screen and (max-width: 560px) {	
-	.main-nav {
-		display: none;
-	}
-	
-	.mobile-circle-menu {
-		display: inline-block;
-	}
-	
-	.main-nav {
-		float:left;
-		margin-top: 35px;
-		margin-left: 25px;
-		border-bottom: none;
-		padding: 0px;
-	}
-	
-	.main-nav li {
-		display: block;
-	}
-	
-	
-	.main-nav li a:link,
-	.main-nav li a:visited {
-		display: block;
-		border: 0;
-		padding: 10px 0;
-		font-size: 100%;
-	}
-    
-    .footer-social {
-		margin-top: 20px;
-    }
-}
-
-
-
-/* max height dla niewysokich smartfonów */
-
-@media only screen and (max-height: 470px) {
-		.name {
-			top: 75%;}
-	}
-	
