@@ -3,447 +3,246 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kawiarnie, bistro, restauracje w Katowicach. Gdzie zjeść smaczne śniadanie, lunch, obiad. Kuchnia, śląska, wegetariańska, Fit.">
-
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic&subset=latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/icons/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/queries.css">
         
-        
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic&subset=latin-ext' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/icons/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="css/font/flaticon.css">
-	
+        <meta name="description" content="Osobista strona Somebody's">
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		
+		
 		<!--[if lt IE 9]>
 		<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 		<![endif]-->
 		
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-        
-        <link href="js/jquery/jquery-ui.css" rel="stylesheet">
-        <script src="js/jquery/jquery-ui.js"></script>		
-        
-        <!-- GMAPS -->
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery/jquery-ui.js"></script>
+		
+		<!-- GMAPS -->
 		<script src="http://maps.google.com/maps/api/js"></script>
 		<script src="js/gmaps.js"></script>
 		
 		<!-- My JS -->
 		<script src="js/main.js"></script>
-        
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/queries.css">
-
 		
-		<title>Silesia's Taste - kawiarnie, bistro, restauracje w Katowicach.</title>
+		<title>Somebody's Page</title>
 	</head>
 	
 	<body>
-	
-		<header class="container-fluid header">
-                <nav class="container-fluid navbar navbar-inverse navbar-fixed-top" id="main-nav" role="navigation">
-                        <div class="container" id="main-nav-content">
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span> 
-                                    </button>
-                                    <a class="navbar-brand" id="brand" href="#">Silesia's Taste</a>
-                                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form navbar-left container" role="search" id="search-section">
-                        <div class="form-group col-xs-9" data-title="sorry, doesn't work yet" id="search">
-                          <input type="text" class="form-control" id="navbar" placeholder="Wpisz nazwę..." >
-                        </div>
-                        <button type="submit" class="btn btn-default col-xs-2" id="button"><i class="ion-android-search"></i></button>
-                      </form>          
-                  </ul>
-                  
-                <ul class="nav navbar-nav navbar-right" id="dropdown-menu">
-                    
-                      <li role="presentation" class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            4 pory dnia<span class="caret"></span>
-                        </a>
-    
-                        <ul class="dropdown-menu">
-                            <li> <a href ="#">Śniadanie</a>
-                            <li> <a href ="#">Lunch</a>
-                            <li> <a href ="#">Deser</a>
-                            <li> <a href ="#">Kolacja</a>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-option"><a href="#">Wege</a></li>
-                    
-                    
-                    <li class="nav-option"><a href="#">Śląska kuchnia</a></li>
-                      
-                    <li class="nav-option"><a href="#">O blogu</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-			
-			</header>
-		
-		<section class="jumbotron">
-			<div class="container-fluid">
-			
-				<header class="container main-header">
-					<h1 id="main-title">Śniadanie? Lunch? Kolacja?</h1>
-                    <h1 id="main-title">Znajdź najlepsze miejsca na Śląsku</h1>
-				</header>
-			</div>
-		</section>
-		
-        
-		<section class="container-fluid last-reviev">
-            <header class="header-main-article">
-				<h2>Znakomite śniadania</h2>
-			</header>
-        
-            <article class= "container main-review-block">
-			     <div class="row">
-				    <div class="col-md-6">
-                        <figure>
-                            <img class="img-responsive" src="image/min/salatka-pomidor-mocarella-pexels-min.jpg">
-                            <figcaption class="figcaption photo-figcaption" data-id="bistro" data-type="5">Ciepłe słodkie croissanty
-                                <i class="ion-ios-more icon-more icon-more5"></i>
-                                <p class="figcaption-description" id="bistro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </figcaption>
-                        </figure>
-                     </div>
-				
-				<div class="col-md-6">
-                    <div class="col-md-12">
-                        <header class="place-name">
-                        <h3>Bistro 8 Stolików | ul. Jagiellońska 8</h3></header>
-
-                        <p>Lokal czynny od 7 rano, gdzie z samego rana możesz się napić dobrej kawy to rzecz nieczęsta na kulinarnej mapie Katowic... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in  <br></p>
+		<section class="first">
+			<header>
+                <nav role="navigation">
+                    <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="#about_me" class="btn" id="s1">O mnie</a></li>
+                        <li><a href="#career" class="btn" id="s2">Kariera</a></li>
+                        <li><a href="#gallery" class="btn" id="s3">Galeria</a></li>
+                        <li><a href="#my_hobby" class="btn" id="s4">Hobby</a></li>
+                        <li><a href="#contact_me" class="btn" id="s5">Kontakt</a></li>
+                    </ul>	
+                    <a class="mobile-circle-menu"><i class="ion-navicon"></i></a>
                     </div>
-                    <div class="row place-information">
-                                <div class="col-md-6">
-                                    
-                                    <div class="article-icons">
-                                        <div><i class="ion-wifi icon-small"></i></div>
-                                        <p class="icon-description">Dostepne Wi-fi</p>
-                                    </div>
-                                    <div class="article-icons">
-                                        <div><i class="ion-ios-paw icon-small"></i></div>
-                                        <p class="icon-description">Przyjdź z psem</p>
-                                    </div>
-                                    
-                                    
-                                
-                                </div>
-                                   <div class="col-md-6">
-                                       
-                                    <div class="article-icons">
-                                        <div><i class="ion-no-smoking icon-small"></i></div>
-                                        <p class="icon-description">Dla niepalących</p>
-                                    </div>
-                                    <div class="article-icons">
-                                        <div><i class="ion-happy-outline icon-small"></i></div>
-                                        <p class="icon-description">Przyjazne dzieciom</p>
-                                    </div>
-                                       
-                                
-                                   </div>
-                        </div>
-                </div>
-				</div>
-			</article>
-		</section>
-		
-		
-		<section class="container-fluid map clearfix">
-			<header class="map-title clearfix">
-				<h2>Najciekawsze miejsca</h2>
-			</header>
-            
-            <div class="container best-places-section">
-                <div class="col-md-7 mapa"></div>	
-            
-            
-                <div class="best-places col-md-5">
-                    <ul>
-                    <li class="oryginal-place oryginal-place-kafej">
-                        <div class="col-xs-6 name-place kafej" id="name-place">Kafej</div>
-                        <div class="col-xs-6" id="icons">
-                            <i class="flaticon-food icon-map" title="pyszne sałatki"></i>
-                            <i class="ion-coffee icon-map" title="alternatywna kawa"></i>
-                            <i class="flaticon-food-8 icon-map" title="dobre desery"></i>
-                        </div>
-                    </li>
-                        
-                        <li class="oryginal-place oryginal-place-strefa">
-                        <div class="col-xs-6 name-place strefa" id="name-place">Strefa Centralna</div>
-                        <div class="col-xs-6" id="icons">
-                            <i class="flaticon-food-6 icon-map" title="bogate kanapki"></i>
-                            <i class="ion-icecream icon-map" title="dobre desery"></i>
-                            <i class="ion-beer icon-map" title="duży wybór piw"></i>
-                            
-                            
-                            
-                        </div>
-                    </li>
-                        
-                        <li class="oryginal-place oryginal-place-zloty">
-                        <div class="col-xs-6 name-place gold" id="name-place">Złoty osioł</div>
-                        <div class="col-xs-6" id="icons">
-                            <i class="ion-ios-nutrition icon-map"></i>
-                            <i class="flaticon-food-1 icon-map"></i>
-                            <i class="ion-ios-body icon-map"></i>
-                        </div>
-                    </li>
-                        
-                        <li class="oryginal-place oryginal-place-prazalnia">
-                        <div class="col-xs-6 name-place coffee" id="name-place">Śląska prażalnia kawy</div>
-                        <div class="col-xs-6" id="icons">
-                            <i class="ion-ios-body icon-map" title="dania FIT"></i>
-                            <i class="ion-icecream icon-map" title="dobre lody"></i>
-                            <i class="flaticon-food icon-map" title="pyszne sałatki"></i>
-                        </div>
-                    </li>
-                        
-                        <li class="oryginal-place oryginal-place-stoliki">
-                        <div class="col-xs-6 name-place bistro" id="name-place">8 stolików</div>
-                        <div class="col-xs-6" id="icons">
-                            <i class="ion-wineglass icon-map osiemstolikow-icon" title="wybór win"></i>
-                            <i class="flaticon-food-5 icon-map osiemstolikow-icon" title="pyszne śniadania"></i>
-                            <i class="flaticon-food-6 icon-map osiemstolikow-icon" title="jajaecznica na tysiąc sposobów"></i>
-                        </div>
-                    </li>
-                        
-                        <li class="oryginal-place oryginal-place-kofeina">
-                        <div class="col-xs-6 name-place coffeine" id="name-place">Kofeina</div>
-                        <div class="col-xs-6" id="icons">
-                            <i class="ion-icecream icon-map" title="lody"></i>
-                            <i class="flaticon-food-1 icon-map" title="dobra kawa"></i>
-                            <i class="flaticon-food-8 icon-map" title="pyszne desery"></i>
-                        </div>
-                    </li>
-                   
+                </nav>
+                <div class="name">
+                    <ul class="name-photo">
+                        <li  class="photoewa">
+                            <a href="#gallery"><div class="ewa-photo"></div></a>
+                        </li>
+                        <li class="ewa-title">
+                            <h1>Somebody's Name</h1>
+                        </li>	
                     </ul>
                 </div>
-            </div>
-		</section>
-        
-        
-        <section class="container-fluid four-seasons">
-            <header class="seasons-title" id="seasons-title">
-                <h2>4 pory dnia</h2>
-            </header>
-            
-            <div class="container four-seasons-photos">
-                <div class="row">
-                    <div class="col-md-6 seasons-photo breakfast">
-                        <figure>
-                            <img class="img-responsive" src="image/min/food-healthy-coffee-cup-pexels-min.jpg">
-                            <figcaption class="four-seasons-figcaption four-seasons-breakfast" data-type="down" data-numer="1">Śniadania
-                                 <i class="ion-ios-more icon-more icon-more1"></i>
-                            </figcaption>
-                            <div class="breakfast-type europe"><p>Europejskie</p></div>
-                            <div class="breakfast-type en"><p>Angielskie</p></div>
-                            <div class="breakfast-type usa"><p>Amerykańskie</p></div>
-                            <div class="breakfast-type japan"><p>Japońskie</p></div>
-                        </figure>
-                    </div>
-                     <div class="col-md-6 seasons-photo lunch">
-                        <figure>
-                            <img class="img-responsive" src="image/min/large_quiche-min.jpg">
-                            <figcaption class="four-seasons-figcaption four-seasons-lunch" data-type="down" data-numer="2">Lunche
-                                <i class="ion-ios-more icon-more icon-more2"></i>
-                            </figcaption>
-                            <div class="lunch-type vege"><p>Wegetariańskie</p></div>
-                            <div class="lunch-type classic"><p>Klasyczne</p></div>
-                        </figure>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 seasons-photo cake">
-
-                        <figure>
-                            <img class="img-responsive" src="image/min/dessert_strawberry-min.jpg">
-                            <figcaption class="four-seasons-figcaption four-seasons-dessert" data-type="down" data-numer="3">Desery
-                                <i class="ion-ios-more icon-more icon-more3"></i>
-                            </figcaption>
-                            <div class="dessert-type cake"><p>Ciasta</p></div>
-                            <div class="dessert-type ice-cream"><p>Lody</p></div>
-                            <div class="dessert-type fit"><p>Fit</p></div>
-                            <div class="dessert-type vegetarian"><p>Wegańskie</p></div>
-                        </figure>
-
-                    </div>
-                     <div class="col-md-6 seasons-photo supper">
-                        <figure>
-                            <img class="img-responsive" src="image/min/foodiesfeed.com_spaghetti-with-meatballs-and-cheese-min.jpg">
-                            <figcaption class="four-seasons-figcaption four-seasons-supper" data-type="down" data-numer="4">Obiady, kolacje
-                                <i class="ion-ios-more icon-more icon-more4"></i>
-                            </figcaption>
-                            <div class="supper-type fitness"><p>Fit</p></div>
-                            <div class="supper-type vegetarian-supper"><p>Wegetariańskie</p></div>
-                            <div class="supper-type silesian"><p>Kuchnia śląska</p></div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="container-fluid last-reviev">
-            <header class="header-main-article">
-				<h2>Pozostałe recenzje</h2>
 			</header>
-            
-            <article class= "container main-review-block">
-			<div class="row">
-				<div class="col-md-6">
-					<figure>
-						<img class="img-responsive" src="image/min/haMburger-pexels-photo-min.jpg">
-						<figcaption class="photo-figcaption" data-id="kafej" data-type="6">Prosto i smacznie
-                            <i class="ion-ios-more icon-more icon-more6"></i>
-                            <p class="figcaption-description" id="kafej">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </figcaption>
-					</figure></div>
-				
-				<div class="col-md-6">
-                    <div class="col-md-12">
-                    
-				
-				
-                        <header class="place-name">
-                        <h3>Kafej | ul. Chorzowska 5</h3></header>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        Wystrój
-                        Obsługa
-                        Smak</p>
-                    </div>
-                    <div class="row place-information">
-                                <div class="col-md-6">
-                                    
-                                    <div class="article-icons">
-                                        <div><i class="ion-wifi icon-small"></i></div>
-                                        <p class="icon-description">Dostepne Wi-fi</p>
-                                    </div>
-                                    <div class="article-icons">
-                                        <div><i class="ion-battery-charging icon-small"></i></div>
-                                        <p class="icon-description">Doładuj gadżet</p>
-                                    </div>
-                                    
-                                
-                                </div>
-                                   <div class="col-md-6">
-                                       
-                                    <div class="article-icons">
-                                        <div><i class="ion-no-smoking icon-small"></i></div>
-                                        <p class="icon-description">Dla niepalących</p>
-                                    </div>
-                                    <div class="article-icons">
-                                        <div><i class="ion-happy-outline icon-small"></i></div>
-                                        <p class="icon-description">Przyjazne dzieciom</p>
-                                       </div>                
-                                   </div>
-                        </div>
-				</div>
-			</div>
-        </article>
-            
-            
-            <article class= "container main-review-block">
-			<div class="row">
-				<div class="col-md-6">
-					<figure>
-                            <img class="img-responsive" src="image/min/salad-healthy-vegetables-pexels-min.jpg">
-						<figcaption class="photo-figcaption" data-id="nieznana" data-type="7">Kuchnia hinduska
-                            <i class="ion-ios-more icon-more icon-more7"></i>
-                            <p class="figcaption-description" id="nieznana">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </figcaption>
-					</figure></div>
-				
-				<div class="col-md-6">
-                    <div class="col-md-12">
-				
-				
-                        <header class="place-name">
-                        <h3>Kto wie kto wie | ul. Nieznana 8</h3></header>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        Wystrój
-                        Obsługa
-                        Smak</p>
-                    </div>
-                    <div class="row place-information">
-                                <div class="col-md-6">
-                                    <div class="article-icons">
-                                        <div><i class="ion-ios-paw icon-small"></i></div>
-                                        <p class="icon-description">Przyjdź z psem</p>
-                                    </div>
-                                    
-                                    <div class="article-icons">
-                                        <div><i class="ion-battery-charging icon-small"></i></div>
-                                        <p class="icon-description">Doładuj gadżet</p>
-                                    </div>
-                                    
-                                
-                                </div>
-                                   <div class="col-md-6">
-                                    <div class="article-icons">
-                                        <div><i class="ion-happy-outline icon-small"></i></div>
-                                        <p class="icon-description">Przyjazne dzieciom</p>
-                                    </div>
-                                       
-                                    <div class="article-icons">
-                                        <div><i class="ion-ios-nutrition icon-small"></i></div>
-                                        <p class="icon-description">Wege</p>
-                                    </div>
-                                
-                                   </div>
-                        </div>
-				</div>
-			</div>
-        </article>
-            
-            
-     
 		</section>
-            
-		<footer class="container-fluid">
-            <div class="row">
-                <div class="container">
-                    <div class="col-xs-12 col-sm-4 col-sm-push-4">
-                        <div class="col-xs-8 col-xs-push-4 animated infinite fadeIn icon-anim"><a href="#"><span class="top">TOP</span></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="container footer-social">
-                    
-					<ul class="social-links col-xs-12 col-sm-4 col-sm-push-4">
-                        <div class="col-xs-4"><li><a href="#"><i class="ion-social-facebook ion-social"></i></a></li></div>
-						<div class="col-xs-4"><li><a href="#"><i class="ion-social-googleplus ion-social"></i></a></li></div>
-						<div class="col-xs-4"><li><a href="#"><i class="ion-social-pinterest ion-social"></i></a></li></div>
-				    </ul>
-              </div>
-            
-            <div class="container footer-end">
-                
-                    
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-8 col-sm-push-4">
-                            <p class="kontakt">Silesia's Taste: silesia@taste.com</p>
-                            <p class="copyright"><small>
-                                Copyright &copy; 2016 by Paulina Kowal</small></p>
-                             <p class="copyright-icons"><small>Font generated by <a href="http://www.flaticon.com" target="_blank">flaticon.com</a>. Under <a href="http://creativecommons.org/licenses/by/3.0/ target="_blank"">CC</a>: <a data-file="food-4" href="http://www.flaticon.com/authors/lyolya" target="_blank">Lyolya</a>, <a data-file="food-5" href="http://www.flaticon.com/authors/baianat" target="_blank">Baianat</a>, <a data-file="food-8" href="http://www.freepik.com" target="_blank">Freepik</a></small></p>
-                            <p class="copyright-photos">Photos from <a href="http://www.freefoodphotos.com/index.html" target="_blank">FreeFoodPhotos.com </a>and other resources.</p>
-                        </div>
-                    </div>
-                </div>
-		</footer>
+        
+		<section class="aboutme clearfix s1" id="about_me" data-type="s1">
+			<div class="row">
+				<div class="column-1 wp1">
+					<div class="live-title">
+                        <i class="ion-ios-home icon-big"></i>
+                        <h2>Mieszkam</h2>
+					</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>					   
+				</div>
+				
+				<div class="column-2 wp1">
+					<div class="job-title">
+                        <i class="ion-ios-paper icon-big"></i>
+                        <h2>Pracuję</h2>
+					</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+				</div>
+				<div class="column-3 wp1">
+					<div class="hobby-title">
+                        <i class="ion-ios-sunny icon-big"></i>
+                        <h2>Hobby</h2>
+					</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 								eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+				</div>	
+			</div>
+		</section>
 		
+		<section class="work clearfix s2" id="career" data-type="s2">
+			<div class="row job">
+				
+				<header class="work-title">
+                    <i class="ion-ios-infinite-outline icon-bigbig"></i>
+                    <h2>Procurement Specialist</h2>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+			</div>
+			<div class="row">	
+				<ul class="learn-job">
+				    <li class="education">
+							<div class="education-headline"><h4>Wykształcenie</h4></div>
+									<p class="education-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim deserunt mollit anim id est laborum
+									</p>					
+                    </li>
+				    <li class="experience">
+				        <div class="experience-headline"><h4>Doświadczenie</h4></div>
+								<p class="experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 	do eiusmod tempor  incididunt ut labore et dolore mminim Lorem ipsum dolor sit amet, consectetur adipiLorem ipsum dolor sit amet, consectetur adipiLorem ipsum dolor sit amet, consectetur adipi									
+								</p>
+				    </li>
+				</ul>   
+            </div>
+		</section>
+        
+		<section class="galeria clearfix s3" id="gallery" data-type="s3">
+			<header class="row galeria-zdjec">
+				<i class="ion-camera icon-bigbig"></i>
+				<h2>Galeria zdjęć</h2>
+			</header>
+			<ul class="gallery">
+				<li>
+					<figure class="gallery-photo 1">
+				        <a class="fancybox" href="img/gallery/maks2.jpg" alt="zdjecie_maksa_1"><img src="img/gallery/maks7.jpg" alt="zdjecie_maksa_1"></a>
+				        <a class="fancybox" rel="grupa1" href="img/gallery/maks4.jpg" alt="zdjecie_maksa_2"></a>	
+					</figure>
+				</li>
+				<li>
+					<figure class="gallery-photo 2">
+					   <a class="fancybox" href="img/gallery/photo-1-min.jpg"><img src="img/gallery/photo-7-pexels-min.jpeg" alt="zdjecie_ewy_1"></a>
+					</figure>
+				</li>
+				<li>
+					<figure class="gallery-photo 3">
+					   <a class="fancybox" href="img/gallery/photo-3-pexels-min.jpg"><img src="img/gallery/photo-6-pexels-min.jpg"></a>
+                    </figure>
+				</li>
+				<li>
+					<figure class="gallery-photo 4">
+					   <a class="fancybox" href="img/gallery/photo-5-pexels-min.jpg"><img src="img/gallery/photo-1-min.jpg">					</a>
+					</figure>
+				</li>
+			</ul>
+			<ul class="gallery clearfix">
+				<li>
+					<figure class="gallery-photo 1">
+					    <a class="fancybox" rel="grupa1" href="img/gallery/maks2.jpg" alt="zdjecie_maksa_1"><img src="img/gallery/maks7.jpg"></a>
+						<a class="fancybox" rel="group1" href="img/gallery/maks4.jpg" alt="zdjecie_maksa_2"></a>
+						<a class="fancybox" rel="group1" href="img/gallery/maks5.jpg" alt="zdjecie_maksa_3"></a>
+						<a class="fancybox" rel="group1" href="img/gallery/maks6.jpg" alt="zdjecie_maksa_4"></a>
+						<a class="fancybox" rel="group1" href="img/gallery/maks.jpg" alt="zdjecie_maksa_5"></a>
+					</figure>
+				</li>
+				<li>
+					<figure class="gallery-photo 2">
+					   <a class="fancybox" href="img/gallery/photo-1-min.jpg"><img src="img/gallery/photo-7-pexels-min.jpeg" alt="zdjecie_ewy_1"></a>	
+					</figure>
+				</li>	
+				<li>
+					<figure class="gallery-photo 3">
+					   <a class="fancybox" href="img/gallery/photo-3-pexels-min.jpg"><img src="img/gallery/photo-6-pexels-min.jpg" alt="photo"></a>
+					</figure>
+				</li>
+				<li>
+					<figure class="gallery-photo 4">
+					   <a class="fancybox" href="img/gallery/photo-5-pexels-min.jpg"><img src="img/gallery/photo-1-min.jpg" alt="photo"></a>	
+					</figure>
+				</li>	
+			</ul>
+		</section>
+		
+		<section class="free-time s4" id="my_hobby" data-type="s4">
+			<div class="row maks">
+				
+				<header class="free-time-title">
+                    <i class="ion-ios-paw icon-bigbig wobble"></i>
+                    <h2>Wolny czas spędzam...</h2>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisLorem</p>
+			</div>
+		</section>
+        
+		<section class="contact s5 clearfix" id="contact_me" data-type="s5">
+			<div class="row contact-title clearfix">
+				<i class="ion-email icon-bigbig"></i>
+				<h2>Formularz kontaktowy</h2>
+			</div>
+			<div class="kontakt-form-map clearfix">
+				<div class="map"></div>
+				    <fieldset class="form">
+					   <form action="mailto:your_adress_email" method="post">
+                            <div class="label">
+                                <label for="name">Imię i Nazwisko</label>
+                            </div>
+                            <input  type="text" id="name" name="name" placeholder="Anna Kowalska" required title="Podaj imię i/lub nazwisko">
+                            <div class="label"><label for="user-email">E-mail</label>
+                            </div>
+                            <input  type="email" id="user-email" name="user-email" placeholder="moj@adres.com" required>
+                            <div class="label"><label for="content">Twoja wiadomość</label></div>			
+                            <textarea rows="10" id="content" name="content" required></textarea>	
+                            <input type="submit" value="Wyślij">
+					   </form>
+					</fieldset>
+				</div>
+	   </section>
+			
+		<footer class="end">
+			<div class="row clearfix">
+				<div class="footer-links">
+					<ul class="footer-nav clearfix">
+						<li><a href="#">Home</a></li>
+						<li><a href="#about_me">O mnie</a></li>
+						<li><a href="#career">Kariera</a></li>
+						<li><a href="#gallery">Galeria</a></li>
+						<li><a href="#my_hobby">Hobby</a></li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<ul class="social-links clearfix">
+						<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+						<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+						<li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+				    </ul>
+				</div>
+			</div>
+			<div class="row footer-end">
+				<h3 class="email_contact">Somebody: somebodys.mail@gmail.com</h3>
+				<p class="copyright"><small>
+					Copyright &copy; 2016 by Paulina Kowal</small></p>
+			</div>
+		</footer>	
 	</body>
+</html>
+
+
+
+
+		
+	
